@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#banner {
+    width: 100%;
+    height: 30%;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    color: rgb(12, 1, 43);
+    
+    z-index: 1000;
+}
+
+#navbar-logo {
+    font-size: 20px;  
+    padding: 20px;
+}
+
+#navbar-menu {
+    display: flex;
+    list-style: none;
+    font-size: 1.4em;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+#navbar-menu li{
+    padding: 8px 20px;
+    
+}
+
+#navbar-menu li:hover{
+    font-weight: bold;
+    background-color: #F55236;
+    border-radius: 5px;
+}
+
+
+
+#navbar-toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        /* margin: auto;
+        padding: 20px; */
+    }
+
+    #navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        /* padding-left: 0;
+        margin-right: 20px; */
+    }
+
+    #navbar-menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    #navbar-toggleBtn {
+        display: block;
+        position: absolute;
+        right: 32px;
+        font-size: 24px;
+        /* padding-right: 40px; */
+    }
+
+    #navbar-menu.active, 
+    #navbar-icons.active {
+        display: flex;
+        padding: 0;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-intro {
+        max-width: 100%;
+        font-size: 1.2em;
+        line-height: 1.6;
+        text-align: center;
+    }
+    
+
+}
+
+.content {
+    flex-direction: column;
+}
+
+.content-container {
+    padding: 2em;
+    display: flex;
+}
+
+
+.content-container-about {
+    flex-direction: row;
+    display: flex;
+}
+
+.about-image-1 {
+    width: 100%;
+    height: 100%;
+}
+
+#home-image {
+    width: 100%;
+    height: 100%;
+}
+
+.content-intro {
+    max-width: 50%;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.content-intro-about {
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+
+.footer {
+    padding: 3em;
+  
+}
