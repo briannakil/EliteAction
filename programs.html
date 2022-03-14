@@ -19,43 +19,100 @@
         <img src="1.png" width="100%" height="8%">
     </div>
     <nav class="navbar">
-        
-        <ul id="navbar-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="programs.html">PROGRAMS</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="inventory.html">INVENTORY</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-        </ul>
-        
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li>ABOUT US
+                    <ul class="dropdown">
+                        <li><a href="teamMember.html">Meet Our Team</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="programs.html">PROGRAMS</a>
+                    <ul class="dropdown">
+                        <li><a href="TaeKwonDo.html">TKD/Fencing</a></li>
+                        <li><a href="afterSchool.html">B4/AfterSchool</a></li>
+                        <li><a href="camp.html">Seasonal Camps</a></li>
+                        <li><a href="demoTeam.html">Elite Demo Team</a></li>
+                        <li><a href="birthdayParty.html">Birthday Parties</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="inventory.php">INVENTORY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                
+            </ul>
+        </div>
     </nav>
-    <div class="content">
+    <div class="content-programs">
+        <h1>Elite Action Programs</h1>
         <div class="content-container-programs">
-            <div class="content-image">
-                <img src="2.jpeg" class="programs-image-1" alt="Placeholder image" />
-            </div>
-            <div class="content-intro-about">
-                <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <img src="/img/tkd.png" alt="Kids practicing TaeKwonDo">
+            <div class="content-container-h1a">
+                <h1>TaeKwonDo / Fencing</h1>
+                <a href="TaeKwonDo.html">Learn more</a>
             </div>
         </div>
         <div class="content-container-programs">
-            <div class="content-image">
-                <img src="2.jpeg" class="programs-image-1" alt="Placeholder image" />
-            </div>
-            <div class="content-intro-about">
-                <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <img src="/img/afterSchool.png" alt="After School activity">
+            <div class="content-container-h1a">
+                <h1>Before / After School</h1>
+                <a href="afterSchool.html">Learn more</a>
             </div>
         </div>
-        
+        <div class="content-container-programs">
+            <img src="/img/camp.png" alt="Summer camp/trip">
+            <div class="content-container-h1a">
+                <h1>Seasonal Camps</h1>
+                <a href="camp.html">Learn more</a>
+            </div>
+        </div>
+        <div class="content-container-programs">
+            <img src="/img/demoTeam.png" alt="Demo team">
+            <div class="content-container-h1a">
+                <h1>Elite Demo Team</h1>
+                <a href="demoTeam.html">Learn more</a>
+            </div>
+        </div>
+        <div class="content-container-programs">
+            <img src="/img/birthdayParty.png" alt="Birthday party">
+            <div class="content-container-h1a">
+                <h1>Birthday Party</h1>
+                <a href="birthdayParty.html">Learn more</a>
+            </div>
+        </div>
     </div>
     <div class="footer">
-        <p><span>&copy;</span>All Rights Reserved.</p>
-        
+        <div class="footer-Container">
+            <div class="business-hour">
+                <h1>Business Hours</h1>
+                <ul>
+                    <li>Monday 7:00 am - 9:00 am & 2:00pm - 7:45 pm</li>
+                    <li>Tuesday 7:00 am - 9:00 am & 2:00pm - 7:30 pm</li>
+                    <li>Wednesday 7:00 am - 9:00 am & 2:00pm - 8:15 pm</li>
+                    <li>Thursday 7:00 am - 9:00 am & 2:00pm - 7:30 pm</li>
+                    <li>Friday 7:00 am - 9:00 am & 2:00pm - 8:30 pm</li>
+                    <li>Sat & Sun Closed</li>
+                </ul>
+                <ul>
+                    <li>
+                        &copy;All Rights Reserved.
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h1>Contact Us</h1>
+
+                <p>
+                    703-372-5820 <br>
+                    eliteactionlorton@gmail.com <br>
+                    9415 Lorton Market st. Lorton VA 22079 
+                    
+                </p>
+                <a href="https://www.facebook.com/EliteActionLorton/" target="_blank"><img src="https://img.icons8.com/material-outlined/24/000000/facebook-new.png"/></a>
+
+            </div>
+        </div>
     </div>
 </body>
 </html>

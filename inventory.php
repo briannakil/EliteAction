@@ -1,3 +1,10 @@
+<?php
+include_once 'database.php';
+$result = mysqli_query($conn,"SELECT * FROM Inventory");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
@@ -44,24 +51,39 @@
         </div>
     </nav>
     <div class="content">
-        <div class="content-container-gallery">
-            <div class="content-gallery">
-                <img src="2.jpeg" class="gallery-image" alt="Placeholder image" />
-                <h2>Description hello hello hi hi hi hello</h2>
-            </div>
-            <div class="content-gallery">
-                <img src="2.jpeg" class="gallery-image" alt="Placeholder image" />
-                <h2>Description hello hello hi hi hi hello</h2>
-            </div>
-            <div class="content-gallery">
-                <img src="2.jpeg" class="gallery-image" alt="Placeholder image" />
-                <h2>Description hello hello hi hi hi hello</h2>
-            </div>
-            <div class="content-gallery">
-                <img src="2.jpeg" class="gallery-image" alt="Placeholder image" />
-                <h2>Description hello hello hi hi hi hello</h2>
-            </div>
-        </div>
+        <?php
+        if (mysqli_num_rows($result) > 0) {
+        ?>
+        <table>
+        
+        <tr>
+            <td>Item ID</td>
+            <td>Name</td>
+            <td>Description</td>
+            <td>Quantity</td>
+        </tr>
+        <?php
+        $i=0;
+        while($row = mysqli_fetch_array($result)) {
+        ?>
+        <tr>
+            <td><?php echo $row["ID"]; ?></td>
+            <td><?php echo $row["Item_Name"]; ?></td>
+            <td><?php echo $row["Item_Description"]; ?></td>
+            <td><?php echo $row["Quantity"]; ?></td>
+        </tr>
+        <?php
+        $i++;
+        }
+        ?>
+        </table>
+        <?php
+        }
+        else{
+            echo "No result found";
+        }
+        ?>
+       
         
     </div>
     <div class="footer">

@@ -1,5 +1,5 @@
 const toggleBtn = document.querySelector("#navbar-toggleBtn");
-const menu = document.querySelector("#navbar-menu");
+const menu = document.querySelector(".navbar-menu");
 
 
 toggleBtn.addEventListener("click", () => {
